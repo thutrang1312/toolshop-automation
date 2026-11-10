@@ -1,4 +1,3 @@
-from pytest_playwright.pytest_playwright import page
 
 from pages.base_page import BasePage
 

@@ -1,7 +1,5 @@
 import re
 
-from pytest_playwright.pytest_playwright import page
-
 from pages.base_page import BasePage
 
 # PROD loads the grid with "QUERY /products", BUGGY with "GET /products?...". Not /products/search.

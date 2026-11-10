@@ -1,13 +1,13 @@
 import re
 import pytest
 from playwright.sync_api import expect
-from pytest_playwright.pytest_playwright import page
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.contact_page import ContactPage
 
 
 @pytest.mark.smoke
+@pytest.mark.ui
 def test_smoke_search_pliers(page):
     """Mục tiêu: Kiểm tra tìm kiếm trả về sản phẩm đúng từ khóa.
     Tiền điều kiện: Có sản phẩm trong hệ thống.
