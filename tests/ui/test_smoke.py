@@ -23,6 +23,7 @@ def test_smoke_search_pliers(page):
 
 
 @pytest.mark.smoke
+@pytest.mark.ui
 def test_smoke_add_claw_hammer_to_cart(page):
     """Mục tiêu: Thêm sản phẩm với số lượng tùy chỉnh cập nhật đúng badge giỏ hàng.
     Tiền điều kiện: Sản phẩm 'Claw Hammer' tồn tại.
@@ -36,6 +37,7 @@ def test_smoke_add_claw_hammer_to_cart(page):
 
 
 @pytest.mark.smoke
+@pytest.mark.ui
 def test_smoke_login_invalid_credentials(page):
     """Mục tiêu: Báo lỗi khi đăng nhập bằng thông tin không tồn tại.
     Tiền điều kiện: Dùng email ngẫu nhiên chưa đăng ký.
@@ -48,6 +50,7 @@ def test_smoke_login_invalid_credentials(page):
 
 
 @pytest.mark.smoke
+@pytest.mark.ui
 def test_smoke_contact_empty_form(page):
     """Mục tiêu: Kiểm tra xác thực form khi gửi liên hệ trống.
     Tiền điều kiện: Người dùng đang ở trang Contact.
